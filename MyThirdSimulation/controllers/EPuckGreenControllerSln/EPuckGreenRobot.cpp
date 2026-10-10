@@ -41,6 +41,7 @@ void EPuckGreenRobot::run() {
       sendMessage("Roam"); 
     } else {
       roam();
+      report();
     }
   }
 }

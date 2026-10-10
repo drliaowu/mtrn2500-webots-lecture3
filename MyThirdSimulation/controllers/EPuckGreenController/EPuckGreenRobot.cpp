@@ -29,8 +29,15 @@ void EPuckGreenRobot::run() {
     if(k == 'T') {
       // turn right
       turn();
+    } else if(k == 'B') {
+      // send message "Backward"
+      sendMessage("Backward");
+    } else if(k == 'R') {
+      // send message "Roam"
+      sendMessage("Roam");
     } else {
       roam();
+      report();
     }
   }
 }
